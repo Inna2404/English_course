@@ -7,6 +7,7 @@ export const WhoSuitsContainer = styled("div")`
   background: #f9f9f9;
   padding: 100px 100px;
   padding: 70px;
+  margin-top: 100px;
   @media (max-width: 768px) {
     display: none;
   }
