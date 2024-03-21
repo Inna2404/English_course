@@ -20,7 +20,14 @@ const AboutCours = () => {
           мікро-контекстах! Тривалість міні-курсу – лише один вікенд! Проте він
           залишиться з вами назавжди
         </AbutCoursText>
-        <AbutCoursSign>Записатися</AbutCoursSign>
+        <AbutCoursSign>
+          <a
+            href="https://ad-astra-school.kwiga.com/courses/english-with-eddie"
+            target="_blank"
+          >
+            Записатися
+          </a>
+        </AbutCoursSign>
       </AbutCoursWrapper>
     </AbutCoursContainer>
   );

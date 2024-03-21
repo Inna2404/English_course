@@ -5,7 +5,6 @@ export const FooterBox = styled("footer")`
   margin-top: 40px;
 `;
 export const FooterContainer = styled("div")`
-  // position: absolute;
   color: #fff;
   bottom: 0;
   width: 100%;
@@ -29,6 +28,10 @@ export const FooterLogo = styled("a")`
   color: #fff;
   margin-top: 30px;
   font-size: 20px;
+  @media (min-width: 1025px) {
+    margin-top: 50px;
+    font-size: 35px;
+  }
 `;
 
 export const FooterList = styled("ul")`
@@ -40,6 +43,12 @@ export const FooterList = styled("ul")`
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  @media (min-width: 1300px) {
+    font-size: 25px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 18px;
   }
 `;
 export const FooterItem = styled("li")`
@@ -59,6 +68,12 @@ export const FooterTitle = styled("h2")`
   @media (max-width: 1024px) {
     margin-top: 15px;
   }
+  @media (min-width: 1300px) {
+    font-size: 35px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 20px;
+  }
 `;
 export const FooterBlockTitle = styled(FooterTitle)``;
 export const FooterBlockBtn = styled("button")`
@@ -70,8 +85,26 @@ export const FooterBlockBtn = styled("button")`
   @media (max-width: 768px) {
     margin: 15px 0;
   }
+  @media (min-width: 1300px) {
+    font-size: 25px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 17px;
+  }
 `;
-export const FooterLink = styled("div")``;
+export const FooterLink = styled("div")`
+  display: flex;
+  @media (min-width: 1025px) {
+    font-size: 18px;
+
+    margin: 0 auto;
+  }
+  @media (min-width: 1300px) {
+    font-size: 20px;
+
+    margin: 0 auto;
+  }
+`;
 
 export const FooterText = styled("p")`
   display: flex;
@@ -81,11 +114,14 @@ export const FooterText = styled("p")`
   @media (max-width: 1024px) {
     padding-bottom: 120px;
   }
-`;
-export const FaceboockIcon = styled("div")`
-  background: url("./img/facebook-icon.svg");
-  width: 200px;
-  height: 200px;
+  @media (min-width: 1300px) {
+    font-size: 25px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 18px;
+  }
 `;
 
-export const InstagramIcon = styled("div")``;
+export const FooterLinkGmail = styled("div")`
+  color: #fff;
+`;

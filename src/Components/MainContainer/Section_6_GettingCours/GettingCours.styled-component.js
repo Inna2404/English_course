@@ -15,6 +15,7 @@ export const GettingAfterCours = styled("div")`
 export const GettingAfterCoursTitle = styled("h2")`
   font-weight: 600;
   font-size: 48px;
+  color: #000;
   @media (max-width: 768px) {
     font-size: 30px;
   }
@@ -27,6 +28,8 @@ export const GettingAfterCoursBlockText = styled("p")`
   display: flex;
   font-size: 18px;
   align-items: center;
+  color: #000;
+  line-height: 150%;
 
   @media (max-width: 768px) {
     font-size: 15px;

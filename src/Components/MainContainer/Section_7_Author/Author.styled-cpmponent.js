@@ -13,6 +13,9 @@ export const AuthorComp = styled("div")`
 `;
 export const AuthorCompAbout = styled("div")`
   margin-left: 20px;
+  color: #000;
+  line-height: 150%;
+
   @media (max-width: 1024px) {
     order: 1;
     margin: 40px;

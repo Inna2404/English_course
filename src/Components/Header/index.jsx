@@ -25,13 +25,19 @@ const Header = ({ items }) => {
         </MenuBtn>
         <NavList>
           <NavLogoBurger>logo</NavLogoBurger>
-
           {items.map((item, index) => (
             <NavItem key={index}>
               <a href={`#${item.id}`}>{item.name}</a>
             </NavItem>
           ))}
-          <NavSign>Записатися</NavSign>
+          <NavSign>
+            <a
+              href="https://ad-astra-school.kwiga.com/courses/english-with-eddie"
+              target="_blank"
+            >
+              Записатися
+            </a>
+          </NavSign>
         </NavList>
       </MenuBurger>
     </NavListWrapp>

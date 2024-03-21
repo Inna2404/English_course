@@ -16,7 +16,7 @@ export const NavListWrapp = styled("div")`
   }
   @media (min-width: 769px) {
     margin: 0;
-    padding-left: 50px;
+    padding-left: 40px;
   }
   @media (min-width: 1025px) {
     padding: 0 80px;
@@ -30,7 +30,7 @@ export const NavListWrapp = styled("div")`
 export const NavLogo = styled("div")`
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
 
@@ -39,6 +39,9 @@ export const NavLogo = styled("div")`
   }
   @media (max-width: 1024px) {
     margin-top: 20px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 25px;
   }
 `;
 export const NavList = styled("ul")`
@@ -61,6 +64,12 @@ export const NavList = styled("ul")`
     background-color: #fff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   }
+  @media (min-width: 1025px) {
+    gap: 15px;
+  }
+  @media (min-width: 1300px) {
+    gap: 35px;
+  }
 `;
 export const NavItem = styled("li")`
   margin: auto;
@@ -79,6 +88,7 @@ export const NavItem = styled("li")`
     }
   }
   @media (min-width: 1025px) {
+    font-size: 17px;
   }
 `;
 export const NavSign = styled("button")`
@@ -93,6 +103,13 @@ export const NavSign = styled("button")`
   @media (max-width: 1024px) {
     margin: 0 auto;
     margin-top: 40px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1300px) {
+    font-size: 18px;
+    margin-left: 100px;
   }
 `;
 

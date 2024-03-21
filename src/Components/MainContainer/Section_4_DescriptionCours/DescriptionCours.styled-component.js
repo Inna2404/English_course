@@ -19,6 +19,7 @@ export const DescriptionCours = styled("div")`
   }
   @media (min-width: 1024px) {
     padding: 80px 100px;
+    margin: 0;
   }
 `;
 export const DescriptionCoursBlock = styled("div")`
@@ -30,8 +31,9 @@ export const DescriptionCoursBlock = styled("div")`
 export const DescriptionCoursTitle = styled("h2")`
   font-weight: 600;
   font-size: 48px;
+  color: #000;
 `;
 export const DescriptionCoursText = styled("p")`
-  color: #6b6b6b;
   font-size: 19px;
+  line-height: 150%;
 `;

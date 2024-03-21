@@ -30,6 +30,14 @@ export const TimerTitle = styled("h2")`
     font-weight: 400;
     margin: 0;
   }
+  @media (min-width: 1025px) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  @media (min-width: 1300px) {
+    font-size: 30px;
+    font-weight: 600;
+  }
 `;
 
 export const TimerText = styled("p")`
@@ -37,6 +45,15 @@ export const TimerText = styled("p")`
 
   @media (max-width: 1024px) {
     font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  @media (min-width: 1025px) {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  @media (min-width: 1300px) {
+    font-size: 30px;
     font-weight: 600;
     margin: 5px 0;
   }
@@ -59,5 +76,13 @@ export const TimerBlock = styled("div")`
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  @media (min-width: 1300px) {
+    font-size: 30px;
+    font-weight: 800;
   }
 `;

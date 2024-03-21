@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ForWhomContainer = styled("div")`
+export const WhoSuitsContainer = styled("div")`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,23 +14,25 @@ export const ForWhomContainer = styled("div")`
     padding: 80px 100px;
   }
 `;
-export const WrapperForWhom = styled("div")`
+export const WrapperWhoSuits = styled("div")`
   width: 50%;
 `;
-export const ForWhomTitle = styled("h2")`
+export const WhoSuitsTitle = styled("h2")`
   font-size: 43px;
   font-weight: 600;
+  color: #000;
 `;
-export const ForWhomText = styled("div")`
-  color: #6b6b6b;
+export const WhoSuitsText = styled("div")`
   font-size: 20px;
   padding-bottom: 15px;
+  line-height: 150%;
+
   @media (max-width: 1024px) {
     padding-bottom: 10px;
   }
 `;
 
-export const ForWhomTextSmall = styled("span")`
-  color: #6b6b6b;
+export const WhoSuitsTextSmall = styled("span")`
   font-size: 20px;
+  line-height: 150%;
 `;

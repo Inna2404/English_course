@@ -13,43 +13,48 @@ import {
   FooterLink,
   FooterLogo,
   FooterText,
-  InstagramIcon,
-  FaceboockIcon
+  FooterLinkGmail
 } from "./Footer.styled-component";
-const Footer = () => {
+const Footer = ({ items }) => {
   return (
     <FooterBox>
       <FooterContainer>
         <FooterBlockConteiner>
           <FooterLogo href="Home">logo</FooterLogo>
-
           <FooterList>
             <FooterTitle>Меню</FooterTitle>
-            <FooterItem>
-              <a href="#FormWhom">Для кого курс? </a>
-            </FooterItem>
-            <FooterItem>
-              <a href="#AboutCours">Про курс</a>
-            </FooterItem>
-            <FooterItem>
-              <a href="#DescriptionAboutCours">Опискурсу</a>
-            </FooterItem>
-            <FooterItem>
-              <a href="#GettingCours">Що ти отримаєш? </a>
-            </FooterItem>
-            <FooterItem>
-              <a href="#Author">Про автора</a>
-            </FooterItem>
+            {items.map((item, index) => {
+              return (
+                <FooterItem key={index}>
+                  <a href={`#${item.id}`}>{item.name} </a>
+                </FooterItem>
+              );
+            })}
           </FooterList>
           <FooterBlock>
             <FooterBlockTitle>Зареєструйся на курс</FooterBlockTitle>
-            <FooterBlockBtn>Записатися</FooterBlockBtn>
+            <FooterBlockBtn>
+              <a
+                href="https://ad-astra-school.kwiga.com/courses/english-with-eddie"
+                target="_blank"
+              >
+                Записатися
+              </a>
+            </FooterBlockBtn>
             <FooterLink>
-              <a href="">infoemail@gmail.com</a>
-              <a href="">
+              <a href="https://mail.google.com/mail/" target="_blank">
+                <FooterLinkGmail>infoemail@gmail.com</FooterLinkGmail>
+              </a>
+              <a
+                href="https://www.instagram.com/ad_astra_english_/?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+                target="_blank"
+              >
                 <div className="instagram_icon"></div>
               </a>
-              <a href="">
+              <a
+                href="https://www.facebook.com/profile.php?id=61555731793404"
+                target="_blank"
+              >
                 <div className="facebook_icon"></div>
               </a>
             </FooterLink>

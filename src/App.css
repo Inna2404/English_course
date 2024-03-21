@@ -1,3 +1,10 @@
+body {
+  color: #6b6b6b;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -52,19 +59,23 @@ a {
   }
   @media (min-width: 1024px) {
     width: 200%;
+    margin-right: 30px;
+  }
+  @media (min-width: 1500px) {
+    width: -webkit-fill-available;
+    background-position: center;
   }
 }
 
 .DescriptionLessonsBlockimg {
   font-size: 100px;
-  color: #ddd; /* Колір тексту */
-  -webkit-text-stroke: 2px #000; /* Штрих для контуру тексту */
+  color: #ddd;
+  -webkit-text-stroke: 2px #000;
   color: transparent;
 }
 
 .GettingAfterCoursImg {
   background: url("./img/books.png") no-repeat;
-  /* width: 100%; */
   height: 220px;
   background-size: cover;
 }
@@ -123,6 +134,7 @@ a {
   content: "\2713";
   font-size: 10px;
   color: #ddd;
+  margin: -4px auto;
 }
 .diplome_img {
   display: block;
@@ -136,11 +148,16 @@ a {
   background: url("./img/icon-instagram.png") no-repeat;
   width: 24px;
   height: 24px;
-  border-radius: 5px;
+  margin-left: 10px;
+  border-radius: 6px;
   background-color: #fff;
 }
 .facebook_icon {
   background: url("./img/icon-facebook.png");
   width: 24px;
-  height: 20px;
+  height: 24px;
+  border-radius: 5px;
+
+  margin-left: 10px;
+  background-color: #fff;
 }

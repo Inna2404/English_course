@@ -10,7 +10,7 @@ import {
   AuthorContainer
 } from "./Author.styled-cpmponent";
 
-const Author = ({ authorItems }) => {
+const Author = ({ items }) => {
   return (
     <AuthorContainer id="Author">
       <AuthorComp>
@@ -20,7 +20,7 @@ const Author = ({ authorItems }) => {
           <AuthorCompAboutName>Ольга Патієвич</AuthorCompAboutName>
 
           <AuthorCompAboutBlock>
-            {authorItems.map((item, index) => (
+            {items.map((item, index) => (
               <div key={index}>
                 <AuthorCompAboutBlockText>
                   <div className="AutorAboutBlockArrow"></div>

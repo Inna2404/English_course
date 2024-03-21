@@ -1,19 +1,19 @@
 import React from "react";
 
 import {
-  ForWhomContainer,
-  WrapperForWhom,
-  ForWhomTitle,
-  ForWhomText,
-  ForWhomTextSmall
-} from "./FormWhom.styled_component";
+  WhoSuitsContainer,
+  WrapperWhoSuits,
+  WhoSuitsTitle,
+  WhoSuitsText,
+  WhoSuitsTextSmall
+} from "./WhoSuits.styled_component";
 
-const FormWhom = () => {
+const WhoSuits = () => {
   return (
-    <ForWhomContainer id="FormWhom">
-      <WrapperForWhom>
-        <ForWhomTitle>Кому підходить?</ForWhomTitle>
-        <ForWhomText>
+    <WhoSuitsContainer id="WhoSuits">
+      <WrapperWhoSuits>
+        <WhoSuitsTitle>Кому підходить?</WhoSuitsTitle>
+        <WhoSuitsText>
           Усім, хто прагне врешті зрозуміти логіку часових конструкцій і
           назавжди попрощатися з нав’язливою ідеєю, що англійські часи – це
           страшний сон! Якщо ви зацікавлені у покращенні свого рівня володіння
@@ -21,16 +21,16 @@ const FormWhom = () => {
           страх говоріння іноземною мовою, але у вас, як завжди, дуже обмежений
           ресурс часу, то цей міні-екскурс по часах саме для вас, адже займе
           лише один з вікендів у вашому житті.
-        </ForWhomText>
-        <ForWhomTextSmall>
+        </WhoSuitsText>
+        <WhoSuitsTextSmall>
           Подаруйте собі цю чудову подорож в часі, де ще ніхто не побував! І,
           повірте, це буде найяскравіша оповідь про вихідні у понеділок на
           каві-брейку!
-        </ForWhomTextSmall>
-      </WrapperForWhom>
+        </WhoSuitsTextSmall>
+      </WrapperWhoSuits>
       <div className="askImg"></div>
-    </ForWhomContainer>
+    </WhoSuitsContainer>
   );
 };
 
-export default FormWhom;
+export default WhoSuits;

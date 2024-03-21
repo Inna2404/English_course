@@ -8,7 +8,8 @@ import {
   BlockFirstBtns,
   BlockFirstBtnOrang,
   BlockFirstNum,
-  BlockFirstNumText
+  BlockFirstNumText,
+  BlockFirstTitleSpan
 } from "./CoursBlock.styled_component";
 
 const CoursBlock = () => {
@@ -18,7 +19,7 @@ const CoursBlock = () => {
         <BlockFirstTitle>
           Курс «English Tenses:
           <br />
-          <span>Weekend with Eddie»</span>
+          <BlockFirstTitleSpan>Weekend with Eddie»</BlockFirstTitleSpan>
         </BlockFirstTitle>
         <BlockFirstText>
           Найулюбленіший та найпопулярніший серед студентів курс, що відкриває
@@ -32,8 +33,17 @@ const CoursBlock = () => {
           англійської, а ще й неодмінно порозважаєтесь!
         </BlockFirstTextMarg>
         <BlockFirstBtns>
-          <BlockFirstBtnOrang>Зареєструватися</BlockFirstBtnOrang>
-          <BlockFirstBtn>Про курс</BlockFirstBtn>
+          <BlockFirstBtnOrang>
+            <a
+              href="https://ad-astra-school.kwiga.com/courses/english-with-eddie"
+              target="_blank"
+            >
+              Зареєструватися
+            </a>
+          </BlockFirstBtnOrang>
+          <BlockFirstBtn>
+            <a href="#AboutCours">Про курс</a>
+          </BlockFirstBtn>
         </BlockFirstBtns>
         <BlockFirstNum>
           +800

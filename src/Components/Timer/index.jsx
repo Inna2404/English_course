@@ -44,14 +44,15 @@ const Timer = () => {
 
       if (remainingTime < 0) {
         localStorage.removeItem("timerStart");
+        clearInterval(interval);
       }
     };
 
-    updateTimer(); // Оновлення таймера після монтування компонента
+    updateTimer();
 
     const interval = setInterval(updateTimer, 1000);
 
-    return () => clearInterval(interval); // Зупинка інтервалу після розмонтування компонента
+    return () => clearInterval(interval);
   }, []);
 
   return (
